@@ -31,7 +31,7 @@ components:
         symlinks:
           - /etc/systemd/system/multi-user.target.wants/k3s.service
       # Include the actual K3s binary
-      - source: https://github.com/k3s-io/k3s/releases/download/v1.32.3+k3s1/k3s
+      - source: https://github.com/k3s-io/k3s/releases/download/v1.34.1+k3s1/k3s
         shasum: b19216803650b567bf980888dec39035edaf664339c55bc4462f7a003edbef83
         target: /usr/sbin/k3s
         executable: true
@@ -41,7 +41,7 @@ components:
           - /usr/sbin/ctr
           - /usr/sbin/crictl
       # Transfer the K3s images for containerd to pick them up
-      - source: https://github.com/k3s-io/k3s/releases/download/v1.32.3+k3s1/k3s-airgap-images-amd64.tar.zst
+      - source: https://github.com/k3s-io/k3s/releases/download/v1.34.1+k3s1/k3s-airgap-images-amd64.tar.zst
         shasum: 2c81a3f3527c590180cd71717ea23d83d023669b38439720fdce62fe23543536
         target: /var/lib/rancher/k3s/agent/images/k3s.tar.zst
     actions:
@@ -97,7 +97,7 @@ components:
         symlinks:
           - /etc/systemd/system/multi-user.target.wants/k3s.service
       # Include the actual K3s binary
-      - source: https://github.com/k3s-io/k3s/releases/download/v1.32.3+k3s1/k3s-arm64
+      - source: https://github.com/k3s-io/k3s/releases/download/v1.34.1+k3s1/k3s-arm64
         shasum: e1704d6dd74332acc8c398d36987663c7d559144b8ce789a83fd0ff1cb40cbaa
         target: /usr/sbin/k3s
         executable: true
@@ -107,7 +107,7 @@ components:
           - /usr/sbin/ctr
           - /usr/sbin/crictl
       # Transfer the K3s images for containerd to pick them up
-      - source: https://github.com/k3s-io/k3s/releases/download/v1.32.3+k3s1/k3s-airgap-images-arm64.tar.zst
+      - source: https://github.com/k3s-io/k3s/releases/download/v1.34.1+k3s1/k3s-airgap-images-arm64.tar.zst
         shasum: 80423c5023a7d2e3ad65e59293e46a01f5d5679c371a444d76a86b1cd2f474d1
         target: /var/lib/rancher/k3s/agent/images/k3s.tar.zst
     actions:
